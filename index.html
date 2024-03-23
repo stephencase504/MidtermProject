@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Page Title -->
+  <title>Midterm Project</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://use.typekit.net/yjj1vbi.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <!-- Internal CSS Styles -->
+  <style>
+    /* Basic styling for the body */
+    body {
+      color: #000000;
+      /* Sets the text color to black */
+      text-align: center;
+      /* Centers the text alignment */
+    }
+
+    /* Styling for the active link */
+    #active {
+      color: #AA1623;
+      /* Sets the color of the active link to #AA1623 */
+    }
+
+    /* Styling for the first link variant */
+    .link1 {
+      color: #AA1623;
+      /* Sets the color of the first link variant to #AA1623 */
+    }
+
+    .link1:hover {
+      color: #AA1623;
+      /* Sets the hover color of the first link variant to #AA1623 */
+    }
+
+    /* Styling for the second link variant */
+    .link2 {
+      color: #000000;
+      /* Sets the color of the second link variant to black */
+      transition: color 0.5s ease;
+      /* Sets a transition effect on the color property with a duration of 0.5s and an easing function of 'ease' */
+    }
+
+    .link2:hover {
+      color: #FFD73B;
+      /* Sets the hover color of the second link variant to #FFD73B */
+    }
+
+    /* Styling for the third link variant */
+    .link3 {
+      color: #000000;
+      /* Sets the color of the third link variant to black */
+      transition: color 0.5s ease;
+      /* Sets a transition effect on the color property with a duration of 0.5s and an easing function of 'ease' */
+    }
+
+    .link3:hover {
+      color: #055C9D;
+      /* Sets the hover color of the third link variant to #055C9D */
+    }
+
+    /* Container to enable flex display */
+    .flex-container {
+      display: flex;
+      /* Enables flexbox layout for the container */
+    }
+
+    /* Main container with a set width */
+    .main-container {
+      width: 100%;
+      /* Sets the width of the main container to 100% of its parent element */
+    }
+
+    /* Paragraph within the gallery section */
+    .gallery-paragraph {
+      flex: auto;
+      /* Allows the paragraph to grow and shrink as needed */
+      margin-top: -30px;
+      /* Moves the paragraph up by 30px */
+      margin-right: 50px;
+      /* Adds a right margin of 50px to the paragraph */
+    }
+
+    /* Content container for the first story */
+    .story-content-1 {
+      display: flex;
+      /* Enables flexbox layout for the container */
+    }
+
+    /* Full-width container for the Mohs scale content */
+    .mohscontent {
+      width: 100%;
+      /* Sets the width of the Mohs scale content container to 100% of its parent element */
+    }
+
+    /* Styling for the Mohs scale section */
+    .mohs {
+      width: 30%;
+      /* Sets the width of the Mohs scale section to 30% of its parent element */
+      float: left;
+      /* Floats the Mohs scale section to the left */
+      margin-left: 45px;
+      /* Adds a left margin of 45px to the Mohs scale section */
+    }
+
+    /* Text styling for the Mohs scale section */
+    .mohstext {
+      flex: auto;
+      /* Allows the text to grow and shrink as needed */
+      margin-top: -25px;
+      /* Moves the text up by 25px */
+      text-align: center;
+      /* Centers the text alignment */
+    }
+
+    /* Content container for the second story */
+    .story-content-2 {
+      display: flex;
+      /* Enables flexbox layout for the container */
+    }
+
+    /* Full-width container for the Cos content */
+    .coscontent {
+      width: 100%;
+      /* Sets the width of the Cos content container to 100% of its parent element */
+    }
+
+    /* Styling for the Cos section */
+    .cos {
+      width: 30%;
+      /* Sets the width of the Cos section to 30% of its parent element */
+      float: right;
+      /* Floats the Cos section to the right */
+      margin-right: 45px;
+      /* Adds a right margin of 45px to the Cos section */
+    }
+
+    /* Text styling for the Cos section */
+    .costext {
+      flex: auto;
+      /* Allows the text to grow and shrink as needed */
+      margin-top: -25px;
+      /* Moves the text up by 25px */
+      text-align: center;
+      /* Centers the text alignment */
+    }
+
+    /* Content container for the third story */
+    .story-content-3 {
+      display: flex;
+      /* Enables flexbox layout for the container */
+    }
+
+    /* Full-width container for the Rawhide content */
+    .rawhidecontent {
+      width: 100%;
+      /* Sets the width of the Rawhide content container to 100% of its parent element */
+    }
+
+    /* Styling for the Rawhide section */
+    .rawhide {
+      width: 30%;
+      /* Sets the width of the Rawhide section to 30% of its parent element */
+      float: left;
+      /* Floats the Rawhide section to the left */
+      margin-left: 45px;
+      /* Adds a left margin of 45px to the Rawhide section */
+    }
+
+    /* Text styling for the Rawhide section */
+    .rawhidetext {
+      flex: auto;
+      /* Allows the text to grow and shrink as needed */
+      margin-top: -25px;
+      /* Moves the text up by 25px */
+      text-align: center;
+      /* Centers the text alignment */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-container">
+    <!-- Main title with the name of the individual -->
+    <h1>Stephen Case</h1>
+
+    <!-- Portrait image of Stephen Case -->
+    <img class="portrait" src="https://i.ibb.co/gFvg2k5/Standard-Portrait.jpg" alt="Standard Portrait" border="0" width="20%">
+
+    <!-- Navigation links to different sections of the site -->
+    <nav>
+      <a id="active" class="link1" href="index.html">Introduction</a>
+      <a class="link2" href="journey.html">My Journey</a>
+      <a class="link3" href="future.html">My Future</a>
+    </nav>
+
+    <!-- Section containing a gallery and accompanying text -->
+    <section>
+      <div class="flex-container">
+        <div class="main-container">
+
+          <!-- Gallery of images -->
+          <div class="gallery">
+            <img src="img/DodgerGame.jpg" alt="Image 1">
+            <img src="img/GradPhoto.jpg" alt="Image 2">
+            <img src="img/MorroBay.jpg" alt="Image 3">
+            <img src="img/RawhidePhoto.jpg" alt="Image 4">
+          </div>
+
+          <!-- Caption container for the gallery images -->
+          <div class="caption">
+            <div class="caption-text">A photo of myself<br>at my first Dodger game</div>
+            <div class="caption-text">A photo of myself at<br>my high school graduation</div>
+            <div class="caption-text">A photo of myself at<br>Morro Bay, California</div>
+            <div class="caption-text">A photo of myself at<br>a Visalia Rawhide game</div>
+          </div>
+
+          <!-- Container for navigation buttons -->
+          <div class="button-container" id="button-container">
+            <button class="prev-button" id="prevButton">Prev</button>
+            <button class="next-button" id="nextButton">Next</button>
+          </div>
+        </div>
+
+        <!-- Text content next to the gallery -->
+        <div class="gallery-paragraph">
+          <h2>Welcome!</h2>
+          <p>My name is Stephen Case and this webpage is my digital resume. This website allows you to get to know me as a graphic designer and my life story.
+            <br>
+            <br>
+            Below you will have a brief timeline of my academic and work experience.
+            <br>
+            <br>
+            On the navigation bar you will be able to view my personal journey as a graphic designer and my future plans as a graphic designer.
+            <br>
+            <br>
+            Below each page you will see a link to my Behance Portfolio so you can view my digital portfolio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional sections for personal story content -->
+    <section>
+      <br>
+      <br>
+      <!-- Content related to Mission Oak High School -->
+      <div class="story-content-1">
+        <div class="mohscontent">
+          <img class="mohs" src="img/MOHS.png" alt="Mission Oak High School">
+          <div class="mohstext">
+            <h2>Mission Oak High School (2011-2015)</h2>
+            <p>I graduated from Mission Oak High School as a co-valedictorian, a California Scholastic Federation Lifetime Member, and with high honors in English, Math, Social Studies, and Science.
+              <br>
+              <br>
+              I also volunteered with Harvesting Hope Tulare County and helped redesign the Varsity Football helmets during my junior year in high school and even made poster designs for football games!
+              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- Content related to College of the Sequoias -->
+      <div class="story-content-2">
+        <div class="coscontent">
+          <img class="cos" src="img/COS.png" alt="College of the Sequoias">
+          <div class="costext">
+            <h2>College of the Sequoias (2015-2024)</h2>
+            <p>I will be graduating from the College of the Sequoias with an Associate of Science in Graphic Design. I have learned how to use Adobe Creative Cloud software and have developed technical skills in
+              logo design, brand identity, photography, and multimedia design.
+              <br>
+              <br>
+              My time at COS has been fruitful as it has allowed me to develop new perspectives and points of view in life while also helping polish and refine my technical skills in the field of graphic design.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- Content related to Visalia Rawhide -->
+      <div class="story-content-3">
+        <div class="rawhidecontent">
+          <img class="rawhide" src="img/Rawhide.png" alt="Visalia Rawhide">
+          <div class="rawhidetext">
+            <h2>Visalia Rawhide (2024-Pres)</h2>
+            <p>On April 2024, I will begin a Graphic Design and Marketinginternship for the Visalia Rawhide Baseball Club that will be for their 2024 Regular Season. I will be creating graphic design creations and creating stadium photography compositions
+              for promotional use.
+              <br>
+              <br>
+              I also will be learning how to do marketing and community outreach to bring in fans old and new to Rawhide games and to expand the team's brand all across Tulare County.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </section>
+
+    <!-- Footer with a link to the Behance portfolio -->
+    <footer>
+      <a href="https://www.behance.net/stephencase2">Behance Portfolio</a>
+      <br>
+      <br>
+      <button class="back-to-top">Back To Top</button>
+    </footer>
+  </div>
+  <!-- Link to the external JavaScript file -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

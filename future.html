@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Midterm Project</title>
+  <link rel="stylesheet" href="https://use.typekit.net/yjj1vbi.css">
+   <link rel="stylesheet" href="css/future.css">
+  
+  <style>
+    /* Basic styling for the body */
+    body {
+      color: #000000;
+      /* Sets the text color to black */
+      text-align: center;
+      /* Centers the text alignment */
+    }
+
+    /* Styling for the active link */
+    #active {
+      color: #055C9D;
+      /* Sets the color of the active link to #055C9D */
+    }
+
+    /* Styling for the first link variant */
+    .link1 {
+      color: #000000;
+      /* Sets the color of the first link variant to black */
+      transition: color 0.5s ease;
+      /* Sets a transition effect on the color property with a duration of 0.5s and an easing function of 'ease' */
+    }
+
+    .link1:hover {
+      color: #AA1623;
+      /* Sets the hover color of the first link variant to #AA1623 */
+    }
+
+    /* Styling for the second link variant */
+    .link2 {
+      color: #000000;
+      /* Sets the color of the second link variant to black */
+      transition: color 0.5s ease;
+      /* Sets a transition effect on the color property with a duration of 0.5s and an easing function of 'ease' */
+    }
+
+    .link2:hover {
+      color: #FFD73B;
+      /* Sets the hover color of the second link variant to #FFD73B */
+    }
+
+    /* Styling for the third link variant */
+    .link3 {
+      color: #055C9D;
+      /* Sets the color of the third link variant to #055C9D */
+    }
+
+    .link3:hover {
+      color: #055C9D;
+      /* Sets the hover color of the third link variant to #055C9D */
+    }
+
+    /* Container to enable flex display */
+    .flex-container {
+      display: flex;
+      /* Enables flexbox layout for the container */
+    }
+
+    /* Main container with a set width */
+    .main-container {
+      width: 100%;
+      /* Sets the width of the main container to 100% of its parent element */
+    }
+
+    /* Paragraph within the gallery section */
+    .gallery-paragraph {
+      flex: auto;
+      /* Allows the paragraph to grow and shrink as needed */
+      margin-top: -30px;
+      /* Moves the paragraph up by 30px */
+      margin-right: 50px;
+      /* Adds a right margin of 50px to the paragraph */
+    }
+
+    /* Content container for the first story */
+    .story-content-1 {
+      display: flex;
+      /* Enables flexbox layout for the first story content container */
+    }
+
+    /* Full-width container for the Grad scale content */
+    .gradcontent {
+      width: 100%;
+      /* Sets the width of the Grad scale content container to 100% of its parent element */
+    }
+
+    /* Styling for the Grad scale section */
+    .grad {
+      width: 30%;
+      /* Sets the width of the Grad scale section to 30% of its parent element */
+      float: left;
+      /* Floats the Grad scale section to the left */
+      margin-left: 45px;
+      /* Adds a left margin of 45px to the Grad scale section */
+    }
+
+    /* Text styling for the Grad scale section */
+    .gradtext {
+      flex: auto;
+      /* Allows the text in the Grad scale section to grow and shrink as needed */
+      margin-top: -25px;
+      /* Moves the text in the Grad scale section up by 25px */
+      text-align: center;
+      /* Centers the text alignment in the Grad scale section */
+    }
+
+    /* Content container for the second story */
+    .story-content-2 {
+      display: flex;
+      /* Enables flexbox layout for the second story content container */
+    }
+
+    /* Full-width container for the Pro content */
+    .procontent {
+      width: 100%;
+      /* Sets the width of the Pro content container to 100% of its parent element */
+    }
+
+    /* Styling for the Pro section */
+    .pro {
+      width: 30%;
+      /* Sets the width of the Pro section to 30% of its parent element */
+      float: right;
+      /* Floats the Pro section to the right */
+      margin-right: 45px;
+      /* Adds a right margin of 45px to the Pro section */
+    }
+
+    /* Text styling for the Pro section */
+    .protext {
+      flex: auto;
+      /* Allows the text in the Pro section to grow and shrink as needed */
+      margin-top: -25px;
+      /* Moves the text in the Pro section up by 25px */
+      text-align: center;
+      /* Centers the text alignment in the Pro section */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-container">
+    <!-- Main title with the name of the individual -->
+    <h1>Stephen Case</h1>
+
+    <!-- Portrait image of Stephen Case -->
+    <img class="portrait" src="https://i.ibb.co/gFvg2k5/Standard-Portrait.jpg" alt="Standard Portrait" border="0" width="20%">
+
+    <!-- Navigation links to different sections of the site -->
+    <nav>
+      <a class="link1" href="index.html">Introduction</a>
+      <a class="link2" href="journey.html">My Journey</a>
+      <a id="active" class="link3" href="future.html">My Future</a>
+    </nav>
+
+    <!-- Section containing a gallery and accompanying text -->
+    <section>
+      <div class="flex-container">
+        <div class="main-container">
+
+          <!-- Gallery of images -->
+          <div class="gallery">
+            <img src="img/ForestPainting.jpg" alt="Image 1">
+            <img src="img/MidnightForest.jpg" alt="Image 2">
+            <img src="img/COSSunset.png" alt="Image 3">
+            <img src="img/Baseball.jpg" alt="Image 4">
+          </div>
+
+          <!-- Caption container for the gallery images -->
+          <div class="caption">
+            <div class="caption-text">Forest Painting</div>
+            <div class="caption-text">Midnight Forest</div>
+            <div class="caption-text">COS Sunset Design</div>
+            <div class="caption-text">Baseball (my first love)</div>
+          </div>
+
+          <!-- Container for navigation buttons -->
+          <div class="button-container" id="button-container">
+            <button class="prev-button" id="prevButton">Prev</button>
+            <button class="next-button" id="nextButton">Next</button>
+          </div>
+        </div>
+
+        <!-- Text content next to the gallery -->
+        <div class="gallery-paragraph">
+          <h2>Future Plans</h2>
+          <p>On the left are photos of some compositions I am the most proud of. And I hope these images can help give you an idea of what my future plans are.
+            <br>
+            <br>
+            Also be sure to visit my Behance Portfolio website at the bottom of the web page!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional sections for personal story content -->
+    <section>
+      <br>
+      <br>
+      <!-- Content related to Mission Oak High School -->
+      <div class="story-content-1">
+        <div class="gradcontent">
+          <img class="grad" src="img/COSGiant.jpg" alt="COS Giant">
+          <div class="gradtext">
+            <h2>Graduating from COS</h2>
+            <p>I will be graduating from the College of the Sequoias, but I will still be attending COS through the Work Experience Program (the program that helped me land my internship with the Visalia Rawhide)
+              so that I can receive some additional college credit.
+              <br>
+              <br>
+              This is so that if I ever decide to attend a 4-year college, I can transfer my credits from my internship to a 4-year college bachelor's degree program.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- Content related to College of the Sequoias -->
+      <div class="story-content-2">
+        <div class="procontent">
+          <img class="pro" src="img/ProfessionalPortrait.jpg" alt="Professional Portrait">
+          <div class="protext">
+            <h2>Finding Employment</h2>
+            <p>But the biggest future plan I have is finding employment. As an autistic individual I want to break the statistic of 85% of autistic college graduates being unemployed.
+              <br>
+              <br>
+              I want to find a job as a graphic
+              designer where I specialize in logo design, brand identity, photography, and multimedia design.
+              <br>
+              <br>
+              I would like to also be in marketing and advertising with my graphic design skill sets and try to stay in the
+              local area of the greater Visalia metro area.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </section>
+
+    <!-- Footer with a link to the Behance portfolio -->
+    <footer>
+      <a href="https://www.behance.net/stephencase2">Behance Portfolio</a>
+      <br>
+      <br>
+      <button class="back-to-top">Back To Top</button>
+    </footer>
+  </div>
+  <!-- Link to the external JavaScript file -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

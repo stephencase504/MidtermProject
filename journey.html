@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Page Title -->
+  <title>Midterm Project</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://use.typekit.net/epd7sws.css">
+  <link rel="stylesheet" href="css/journey.css">
+
+  <!-- Internal CSS Styles -->
+  <style>
+    /* Basic styling for the body */
+    body {
+      color: #000000;
+      /* Sets the text color to black */
+      text-align: center;
+      /* Centers the text alignment */
+    }
+
+    /* Styling for the active link */
+    #active {
+      color: #FFD73B;
+      /* Sets the color of the active link to #FFD73B */
+    }
+
+    /* Styling for the first link variant */
+    .link1 {
+      color: #000000;
+      /* Sets the color of the first link variant to black */
+      transition: color 0.5s ease;
+      /* Sets a transition effect on the color property with a duration of 0.5s and an easing function of 'ease' */
+    }
+
+    .link1:hover {
+      color: #AA1623;
+      /* Sets the hover color of the first link variant to #AA1623 */
+    }
+
+    /* Styling for the second link variant */
+    .link2 {
+      color: #FFD73B;
+      /* Sets the color of the second link variant to #FFD73B */
+    }
+
+    .link2:hover {
+      color: #FFD73B;
+      /* Sets the hover color of the second link variant to #FFD73B */
+    }
+
+    /* Styling for the third link variant */
+    .link3 {
+      color: #000000;
+      /* Sets the color of the third link variant to black */
+      transition: color 0.5s ease;
+      /* Sets a transition effect on the color property with a duration of 0.5s and an easing function of 'ease' */
+    }
+
+    .link3:hover {
+      color: #055C9D;
+      /* Sets the hover color of the third link variant to #055C9D */
+    }
+
+    /* Container to enable flex display */
+    .flex-container {
+      display: flex;
+      /* Enables flexbox layout for the container */
+    }
+
+    /* Main container with a set width */
+    .main-container {
+      width: 100%;
+      /* Sets the width of the main container to 100% of its parent element */
+    }
+
+    /* Paragraph within the gallery section */
+    .gallery-paragraph {
+      flex: auto;
+      /* Allows the paragraph to grow and shrink as needed */
+      margin-top: -30px;
+      /* Moves the paragraph up by 30px */
+      margin-right: 50px;
+      /* Adds a right margin of 50px to the paragraph */
+    }
+
+    /* Content container for the first story */
+    .story-content-1 {
+      display: flex;
+      /* Enables flexbox layout for the first story content container */
+    }
+
+    /* Full-width container for the Tulare scale content */
+    .tularecontent {
+      width: 100%;
+      /* Sets the width of the Tulare scale content container to 100% of its parent element */
+    }
+
+    /* Styling for the Tulare scale section */
+    .tulare {
+      width: 30%;
+      /* Sets the width of the Tulare scale section to 30% of its parent element */
+      float: left;
+      /* Floats the Tulare scale section to the left */
+      margin-left: 45px;
+      /* Adds a left margin of 45px to the Tulare scale section */
+    }
+
+    /* Text styling for the Tulare scale section */
+    .tularetext {
+      flex: auto;
+      /* Allows the text in the Tulare scale section to grow and shrink as needed */
+      margin-top: -25px;
+      /* Moves the text in the Tulare scale section up by 25px */
+      text-align: center;
+      /* Centers the text alignment in the Tulare scale section */
+    }
+
+    /* Content container for the second story */
+    .story-content-2 {
+      display: flex;
+      /* Enables flexbox layout for the second story content container */
+    }
+
+    /* Full-width container for the Mohs scale content */
+    .mohscontent {
+      width: 100%;
+      /* Sets the width of the Mohs scale content container to 100% of its parent element */
+    }
+
+    /* Styling for the Mohs scale section */
+    .mohs {
+      width: 30%;
+      /* Sets the width of the Mohs scale section to 30% of its parent element */
+      float: right;
+      /* Floats the Mohs scale section to the right */
+      margin-right: 45px;
+      /* Adds a right margin of 45px to the Mohs scale section */
+    }
+
+    /* Text styling for the Mohs scale section */
+    .mohstext {
+      flex: auto;
+      /* Allows the text in the Mohs scale section to grow and shrink as needed */
+      margin-top: -25px;
+      /* Moves the text in the Mohs scale section up by 25px */
+      text-align: center;
+      /* Centers the text alignment in the Mohs scale section */
+    }
+
+    /* Content container for the third story */
+    .story-content-3 {
+      display: flex;
+      /* Enables flexbox layout for the third story content container */
+    }
+
+    /* Full-width container for the Cos content */
+    .coscontent {
+      width: 100%;
+      /* Sets the width of the Cos content container to 100% of its parent element */
+    }
+
+    /* Styling for the Cos section */
+    .cos {
+      width: 30%;
+      /* Sets the width of the Cos section to 30% of its parent element */
+      float: left;
+      /* Floats the Cos section to the left */
+      margin-left: 45px;
+      /* Adds a left margin of 45px to the Cos section */
+    }
+
+    /* Text styling for the Cos section */
+    .costext {
+      flex: auto;
+      /* Allows the text in the Cos section to grow and shrink as needed */
+      margin-top: -25px;
+      /* Moves the text in the Cos section up by 25px */
+      text-align: center;
+      /* Centers the text alignment in the Cos section */
+    }
+
+    /* Content container for the fourth story */
+    .story-content-4 {
+      display: flex;
+      /* Enables flexbox layout for the fourth story content container */
+    }
+
+    /* Full-width container for the Rawhide content */
+    .rawhidecontent {
+      width: 100%;
+      /* Sets the width of the Rawhide content container to 100% of its parent element */
+    }
+
+    /* Styling for the Rawhide section */
+    .rawhide {
+      width: 30%;
+      /* Sets the width of the Rawhide section to 30% of its parent element */
+      float: right;
+      /* Floats the Rawhide section to the right */
+      margin-right: 45px;
+      /* Adds a right margin of 45px to the Rawhide section */
+    }
+
+    /* Text styling for the Rawhide section */
+    .rawhidetext {
+      flex: auto;
+      /* Allows the text in the Rawhide section to grow and shrink as needed */
+      margin-top: -25px;
+      /* Moves the text in the Rawhide section up by 25px */
+      text-align: center;
+      /* Centers the text alignment in the Rawhide section */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-container">
+    <!-- Main title with the name of the individual -->
+    <h1>Stephen Case</h1>
+
+    <!-- Portrait image of Stephen Case -->
+    <img class="portrait" src="https://i.ibb.co/gFvg2k5/Standard-Portrait.jpg" alt="Standard Portrait" border="0" width="20%">
+
+    <!-- Navigation links to different sections of the site -->
+    <nav>
+      <a class="link1" href="index.html">Introduction</a>
+      <a id="active" class="link2" href="journey.html">My Journey</a>
+      <a class="link3" href="future.html">My Future</a>
+    </nav>
+
+    <!-- Section containing a gallery and accompanying text -->
+    <section>
+      <div class="flex-container">
+        <div class="main-container">
+
+          <!-- Gallery of images -->
+          <div class="gallery">
+            <img src="img/SeniorPhoto.jpg" alt="Image 1">
+            <img src="img/HighSchoolPoster.jpg" alt="Image 2">
+            <img src="img/FootballHelmets.jpg" alt="Image 3">
+            <img src="img/OnlineStudy.jpg" alt="Image 4">
+          </div>
+
+          <!-- Caption container for the gallery images -->
+          <div class="caption">
+            <div class="caption-text">Senior Photo from Mission Oak High School</div>
+            <div class="caption-text">A poster I made for a high school basketball game</div>
+            <div class="caption-text">High school football helmet design I helped create</div>
+            <div class="caption-text">A photo of myself studying COS online courses at home</div>
+          </div>
+
+          <!-- Container for navigation buttons -->
+          <div class="button-container" id="button-container">
+            <button class="prev-button" id="prevButton">Prev</button>
+            <button class="next-button" id="nextButton">Next</button>
+          </div>
+        </div>
+
+        <!-- Text content next to the gallery -->
+        <div class="gallery-paragraph">
+          <h2>My Life Journey</h2>
+          <p>I am not one to tell long stories but on March 25th, 1996, I was born in Visalia, CA and raised in Tulare, CA.
+            <br>
+            <br>
+            I also have autism spectrum disorder which in a nutshell means that my brain processes things and thinks divergently than most people would.
+            <br>
+            <br>
+            I however have over the years used my autism to my advantage to get me ahead of my life.
+            <br>
+            <br>
+            And I have had a lot of highs and lows but have grown stronger over the years. Below is the story of how I became a graphic designer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional sections for personal story content -->
+    <section>
+      <br>
+      <br>
+      <!-- Content related to Visalia Rawhide -->
+      <div class="story-content-1">
+        <div class="tularecontent">
+          <img class="tulare" src="img/Tulare.jpg" alt="Tulare">
+          <div class="tularetext">
+            <h2>Tulare Raised</h2>
+            <p>I was born in Visalia, California and grew up in Tulare, California for my entire life. I also grew up while being on the autism spectrum.
+              <br>
+              <br>
+              While everyone in my hometown often worked everyday monotonously, I would
+              often look at logos, magazine covers, billboards, and packaging labels everywhere I went as I would always notice if designs changed.
+              <br>
+              <br>
+              I guess you could say that was where my journey as a graphic designer began.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- Content related to Mission Oak High School -->
+      <div class="story-content-2">
+        <div class="mohscontent">
+          <img class="mohs" src="img/MissionOakCampus.jpg" alt="Mission Oak High School Campus">
+          <div class="mohstext">
+            <h2>Soaring High at Mission Oak</h2>
+            <p>I was a very studious student growing up as I would often get good grades, but I also had a difficult time making and keeping friends due to my autism.
+              <br>
+              <br>
+              However, when I got to Mission Oak High School, I was accepted with open arms and opportunities started opening up for me.
+              <br>
+              <br>
+              I helped redesign the varsity football helmets, made posters for numerous sporting events, and even gave good ideas for ASB to promote school spirit. I graduated Mission Oak in 2015
+              as a co-valedictorian and was even named most spirited for my graduating class.
+              <br>
+              <br>
+              I had high honors in all subjects.
+              High school was like a home away from home as it allowed me to blossom and be free as an autistic individual and I consider high school to be the best years of my life.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- Content related to College of the Sequoias -->
+      <div class="story-content-3">
+        <div class="coscontent">
+          <img class="cos" src="img/COSTulare.jpg" alt="College of the Sequoias Tulare Campus">
+          <div class="costext">
+            <h2>Giant Leaps at COS</h2>
+            <p>I started COS in 2015 and realized right away that college was not like high school as everyone was less sociable and more career focused.
+              <br>
+              <br>
+              I had enrolled as a part-time student as I did not want to stress myself out too much and wanted to go slow and steady.
+              <br>
+              <br>
+              In 2019 however, I was getting burned out and I decided to take a break for a year to get my mind cleared up and had planned to return in the Fall of 2020 to finish my degree...
+              <br>
+              <br>
+              ...And then the COVID-19 Pandemic came.
+              <br>
+              <br>
+              During the pandemic, I was stuck at home wondering if there was even a future for me.<br> I honestly was at the lowest point in my life.
+              <br>
+              <br>
+              But then in 2022, we were all finally allowed to do normal activities and I decided to finish what I started at COS and complete my degree. This time as a full-time student.
+              <br>
+              <br>
+              And now, I am going to be graduating with an Associate of Science in Graphic Design in May.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- Content related to Visalia Rawhide -->
+      <div class="story-content-4">
+        <div class="rawhidecontent">
+          <img class="rawhide" src="img/RawhideBallPark.jpg" alt="Valley Strong Ballpark">
+          <div class="rawhidetext">
+            <h2>Sliding into Home with the Rawhide</h2>
+            <p>My overall goal is to find employment, so I decided to search for internships during my second stint at COS and then the opportunity of a lifetime came.
+              <br>
+              <br>
+              I was able to land a Marketing/Graphic Design Internship with the Visalia Rawhide. I have been an avid fan of baseball as it was baseball that allowed me to be able to go out to social places as a young child.
+              <br>
+              <br>
+              And my first baseball game coincidentally was a Visalia Rawhide game back in the days when they were called the Visalia Oaks. that one game led me to watch Fresno Grizzlies games, and later Los Angeles Dodger games.
+              <br>
+              <br>
+              And to be able to intern with the team that made me love baseball and to use my talents to promote their brand and identity is honestly a dream come true. I almost feel like I am in some Cinderella story where
+              I am having all my dreams coming true. It really shows how when you work hard, your dreams do indeed come true.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </section>
+
+    <!-- Footer with a link to the Behance portfolio -->
+    <footer>
+      <a href="https://www.behance.net/stephencase2">Behance Portfolio</a>
+      <br>
+      <br>
+      <button class="back-to-top">Back To Top</button>
+    </footer>
+  </div>
+  <!-- Link to the external JavaScript file -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
