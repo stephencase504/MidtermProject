@@ -1,0 +1,165 @@
+/* General body styling */
+body {
+  background-color: #FFF8DC; /* Sets the background color of the webpage to Cornsilk */
+  font-family: "reross-quadratic", Arial, sans-serif; /* Specifies the primary font family as "reross-quadratic", with Arial and sans-serif as fallbacks */
+  text-align: center; /* Centers the text within the body of the webpage */
+  transform: scale(1.0115); /* Scales up the size of the webpage by a factor of 1.0115 */
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: #ffffff; /* Sets the background color of the navigation bar to white */
+  padding: 1em 0; /* Adds padding of 1em to the top and bottom of the navigation bar */
+  margin-bottom: 3em; /* Adds a bottom margin of 3em below the navigation bar to create space between the navigation bar and the content that follows */
+}
+
+/* Styling for first-level headings (h1) */
+h1 {
+  color: #000000; /* Sets the text color of first-level headings to black */
+  font-size: 100px; /* Sets the font size of first-level headings to 100 pixels */
+  margin-top: -0.1em; /* Reduces the top margin of first-level headings by 0.1em to bring the headings closer to the content above them */
+  margin-bottom: 1em; /* Adds a bottom margin of 1em below first-level headings to create space between the headings and the content that follows */
+}
+
+/* Styling for second-level headings (h2) */
+h2 {
+  color: #055C9D; /* Sets the text color of second-level headings to a dark blue */
+  font-size: 40px; /* Sets the font size of second-level headings to 40 pixels */
+}
+
+/* Paragraph text styling */
+p {
+  color: #000000; /* Sets the text color of paragraphs to black */
+  font-size: 28px; /* Sets the font size of paragraphs to 28 pixels for better readability */
+}
+
+/* Footer section styling */
+footer {
+  background-color: #aec6cf; /* Sets the background color of the footer section to a light blue */
+  padding: 1em 0; /* Adds padding of 1em to the top and bottom of the footer section */
+}
+
+/* Image styling for portraits */
+img.portrait {
+  margin-top: -3em; /* Reduces the top margin of portrait images by 3em to overlap with the element above */
+  margin-bottom: 3em; /* Adds a bottom margin of 3em below portrait images to create space between the images and the content that follows */
+  border-radius: 50%; /* Rounds the corners of portrait images to create a circular shape */
+}
+
+/* Anchor tag (link) styling */
+a {
+  color: #ffffff; /* Sets the text color of links to white */
+  text-decoration: none; /* Removes the underline from links */
+  font-size: 48pt; /* Sets the font size of links to 48 points */
+  margin: 50px; /* Adds a margin of 50px around links to create space between the links and other elements */
+  text-align: center; /* Centers the text within links */
+}
+
+/* Container styling for buttons */
+.button-container {
+  text-align: center; /* Centers the elements within the button container */
+  margin-top: 20px; /* Adds a top margin of 20px above the button container to create space between the button container and the content above */
+}
+
+/* Styling for previous and next navigation buttons */
+.prev-button,
+.next-button {
+  background-color: #FF6961; /* Sets the background color of the previous and next buttons to a soft red */
+  color: #ffffff; /* Sets the text color of the previous and next buttons to white */
+  padding: 20px 40px; /* Adds padding of 20px vertically and 40px horizontally around the text within the previous and next buttons */
+  border: none; /* Removes the border from the previous and next buttons */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the previous and next buttons */
+  font-family: "reross-quadratic", Arial, sans-serif; /* Specifies the primary font family for the previous and next buttons as "reross-quadratic", with Arial and sans-serif as fallbacks */
+  font-size: 23.5pt; /* Sets the font size of the previous and next buttons to 23.5 points */
+}
+
+/* Additional styling for the next button */
+.next-button {
+  background-color: #FDFD96; /* Sets the background color of the next button to a soft yellow */
+  color: #000000; /* Sets the text color of the next button to black */
+}
+
+/* Gallery container styling */
+.gallery {
+  display: flex; /* Enables flexible box layout for the gallery container */
+  justify-content: center; /* Centers items along the main axis within the gallery container */
+  align-items: center; /* Centers items along the cross axis within the gallery container */
+  height: 400px; /* Sets a fixed height of 400px for the gallery container */
+  margin-bottom: 20px; /* Adds a bottom margin of 20px below the gallery container to create space between the gallery container and the content that follows */
+  perspective: 1200px; /* Sets the perspective for 3D transforms within the gallery container to 1200px */
+}
+
+
+/* Styling for images within the gallery */
+.gallery img {
+  max-width: 100%; /* Ensures the image does not exceed the width of its container */
+  max-height: 100%; /* Ensures the image does not exceed the height of its container */
+  position: absolute; /* Positions the image at the absolute position within its container */
+  opacity: 0; /* Sets the initial opacity of the image to 0, making it fully transparent */
+  width: 100%; /* Sets the image width to occupy the full width of its container */
+  height: 100%; /* Sets the image height to occupy the full height of its container */
+  object-fit: contain; /* Ensures the image maintains its aspect ratio while fitting within its container */
+  transition: opacity 1s, transform 1s; /* Applies a transition effect to the opacity and transform properties over a duration of 1 second */
+}
+
+/* Styling for the active class on gallery images */
+.gallery img.active {
+  opacity: 1; /* Sets the opacity of the active image to 1, making it fully visible */
+}
+
+/* Caption text styling */
+.caption {
+  color: #000000; /* Sets the text color of the caption to black */
+  font-size: 40px; /* Sets the font size of the caption to 40 pixels */
+}
+
+/* Animation keyframes for fading out elements */
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Sets the initial opacity of the element to 1, making it fully visible */
+    transform: scaleX(1); /* Sets the initial horizontal scaling of the element to 1, maintaining its original size */
+  }
+  100% {
+    opacity: 0; /* Sets the final opacity of the element to 0, making it fully transparent */
+    transform: scaleX(0); /* Sets the final horizontal scaling of the element to 0, reducing its width to zero */
+  }
+}
+
+/* Animation keyframes for fading in elements */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Sets the initial opacity of the element to 0, making it fully transparent */
+    transform: scaleX(0); /* Sets the initial horizontal scaling of the element to 0, reducing its width to zero */
+  }
+  100% {
+    opacity: 1; /* Sets the final opacity of the element to 1, making it fully visible */
+    transform: scaleX(1); /* Sets the final horizontal scaling of the element to 1, maintaining its original size */
+  }
+}
+
+/* Styling for the page container */
+.page-container {
+    opacity: 0; /* Sets the initial opacity of the page container to 0, making it fully transparent */
+    transition: opacity 0.5s ease; /* Applies a transition effect to the opacity property over a duration of 0.5 seconds, creating a fade-in effect */
+}
+
+/* Styling for the back-to-top button */
+.back-to-top {
+    position: center; /* Centers the back-to-top button within its container */
+	background-color: #ffffff; /* Sets the background color of the back-to-top button to white */
+	border: none; /* Removes the border from the back-to-top button */
+	padding: 0.5em 1em; /* Adds padding of 0.5em vertically and 1em horizontally around the text within the back-to-top button */
+	border-radius: 10px; /* Rounds the corners of the back-to-top button to create a pill shape */
+	font-family: "reross-quadratic", Arial, sans-serif; /* Specifies the primary font family for the back-to-top button as "reross-quadratic", with Arial and sans-serif as fallbacks */
+	font-size: 23.5pt; /* Sets the font size of the back-to-top button to 23.5 points */
+	color: #aec6cf; /* Sets the text color of the back-to-top button to a light blue */
+    right: 2rem; /* Positions the back-to-top button 2rem from the right edge of its container */
+    bottom: 2rem; /* Positions the back-to-top button 2rem from the bottom edge of its container */
+	transition: color 0.5s ease; /* Applies a transition effect to the color property over a duration of 0.5 seconds, creating a color fade effect */
+}
+
+/* Styling for the hover state of the back-to-top button */
+.back-to-top:hover {
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the back-to-top button */
+	color: #000000; /* Sets the text color of the back-to-top button to black when hovered over */
+}
